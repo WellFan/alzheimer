@@ -1,0 +1,40 @@
+# LaTeX intermediate files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Output files
+*.pdf
+*.dvi
+*.ps
+
+# Temporary/editor files
+*~
+*.swp
+*.bak
+*.backup
+*.tmp
+
+# VS Code / TeXstudio / other editors
+.vscode/
+*.synctex.gz
+*.synctex.gz(busy)
+*.xdy
