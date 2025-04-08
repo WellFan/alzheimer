@@ -32,6 +32,9 @@
 *.bak
 *.backup
 *.tmp
+*.bcf
+*.run.xml
+*.xdv
 
 # VS Code / TeXstudio / other editors
 .vscode/
