@@ -20,6 +20,9 @@
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+*.run.xml
+*.bcf
+*.xdv
 
 # Output files
 *.pdf
