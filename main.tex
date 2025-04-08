@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage{diagbox}
+\usepackage{amsmath}
+\usepackage{graphicx} %插入图片的宏包
+\usepackage{float} %设置图片浮动位置的宏包
+\usepackage{subfigure} %插入多图时用子图显示的宏包
+\usepackage{setspace}
+\usepackage{xeCJK}
+\usepackage{amssymb}
+\usepackage[backend=biber, style=authoryear,]{biblatex}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage[rightcaption]{sidecap}
+\usepackage{caption}
+\usepackage{fontspec}
+\usepackage{amsthm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{prop}[theorem]{Proposition}
+
+
+\newcommand{\matr}[1]{\mathbf{#1}} % undergraduate algebra version
+%\newcommand{\matr}[1]{#1}          % pure math version
+%\newcommand{\matr}[1]{\bm{#1}}     % ISO complying version
+
+
+
+\setCJKmainfont{NotoSerifTC-Regular.otf} %自行去 google font 下載該字型
+\XeTeXlinebreaklocale "zh"             %這兩行一定要加，中文才能自動換行
+\XeTeXlinebreakskip = 0pt plus 1pt     %這兩行一定要加，中文才能自動換行
+\defaultCJKfontfeatures{AutoFakeBold=6,AutoFakeSlant=.4} %以後不用再設定粗斜
+\newCJKfontfamily\Kai{標楷體}           %定義指令\Kai則切換成標楷體
+\newCJKfontfamily\Hei{微軟正黑體}       %定義指令\Hei則切換成正黑體
+\newCJKfontfamily\NewMing{新細明體}     %定義指令\NewMing則切換成新細明體
+\singlespacing                         %單行距
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Application of Nested Logit Model on Recommendation System}
+\author{Wei-Yu Fan\thanks{
+Graduate student in Department of Economics, National Taiwan University.\\ 
+Email address: entrencemania@gmail.com
+}, Yu-Chan Chen
+} 
+\date{May 2024}
+\addbibresource{reference.bib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+\begin{sloppypar}
+\begin{spacing}{0}
+\begin{abstract}
+\noindent 
+We investigated the application of the nested logit (NL) model in the recommendation system (RS). By employing random utility models and the nested logit distribution, we conceptualize consumer interactions with products as stochastic events, modulated by individual preferences across product categories. Subsequently, within the constraints of limited advertising slots, we optimize product assortments to maximize the likelihood of consumer engagement. Moreover, we derive a closed-form solution for this model and furnish accompanying algorithms.
+\end{abstract}
+\end{spacing}
+\begin{tabular}{rl}
+\\
+\textbf{Keywords:} &Random Utility Model, Nested Logit Model, \\
+&Recommendation System, Assortment Optimization.\\
+\end{tabular}
+
+\newpage
+\section{Introduction}
+
+\includegraphics[width=0.8\textwidth]{figures/intro.png}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\printbibliography
+
+
+\end{sloppypar}
+\end{document}
